@@ -52,7 +52,8 @@ class LocalUrlGenerator extends BaseUrlGenerator
     protected function getBaseMediaDirectoryUrl(): string
     {
         if ($diskUrl = $this->config->get("filesystems.disks.{$this->media->disk}.url")) {
-            return str_replace(url('/'), '', $diskUrl);
+            return $diskUrl;
+//            return str_replace(url('/'), '', $diskUrl);
         }
 
         if (! Str::startsWith($this->getStoragePath(), public_path())) {
