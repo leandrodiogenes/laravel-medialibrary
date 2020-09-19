@@ -32,6 +32,7 @@ class LocalUrlGenerator extends BaseUrlGenerator
      * @param \DateTimeInterface $expiration
      * @param array              $options
      *
+     *
      * @return string
      *
      * @throws \Spatie\MediaLibrary\Exceptions\UrlCannotBeDetermined
